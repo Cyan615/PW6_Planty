@@ -23,7 +23,7 @@
 
 
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-<?php wp_nav_menu( array( 'theme_location' => 'Navigation', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
+<?php wp_nav_menu( array( 'theme_location' => 'navBar', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
 
 </nav>
 </header>
