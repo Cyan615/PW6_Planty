@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
 
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
 body * {
+    box-sizing:border-box;
+    font-size: 1.6rem;
     font-family: 'Syne', sans-serif;
 }
 main{
     background-color: #ece2da;
 }
 /* header & navbar */
-#header, #branding, .menu ul {
+#header, #branding, #menu, #menu-navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 #header {
-    height: 80px;
+    height: 8rem;
     padding: 1vw;
-    font-size: 19px;
+    font-size: 1.9rem;
     background-color: #fff;
 }
+/* logo et message de description */
 #branding {
     width: 30%;
 }
@@ -30,33 +36,43 @@ main{
     width: 20vw;
 }
 #site-description {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: 'Baskervville', serif;
 }
-.page_item a {
+/* menu de navigation */
+.menu-item a {
     text-decoration: none;
     color: #333333;
     padding: 0, 0.5rem;
     outline: none;
 }
-.page_item a:hover{
+.menu-item a:hover{
     font-weight: bold;
 }
-.page_item.page-item-59 {
-    order: 3;
-}
-.page_item.page-item-59 a{
+/* boutton commander design */
+#menu-item-113 a{
     color: #fff;
     background-color: #e0b9b4;
-    /* padding: 1rem; */
-    height: 80px;
-    width: 236px;
+    height: 8rem;
+    width: 23.6rem;
     justify-content: center;
     display: flex;
     align-items: center;
 }
-.page_item.page-item-59 a:hover {
+#menu-item-113 a:hover {
     background-color: #c02e44;
     font-weight: 400;
+}
+/* footer */
+#menu-footer-1 {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* responsive */
+/* breakpoint tablet: 1025px */
+@media screen and (max-width:1025px) {
+    
 }
