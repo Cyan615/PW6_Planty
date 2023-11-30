@@ -3894,7 +3894,7 @@ function useRichText({
   function setRecordFromProps() {
     _value.current = value;
     record.current = create({
-      html: preserveWhiteSpace ? value : collapseWhiteSpace(value)
+      html: preserveWhiteSpace ? value : collapseWhiteSpace(typeof value === 'string' ? value : '')
     });
     if (disableFormats) {
       record.current.formats = Array(value.length);
