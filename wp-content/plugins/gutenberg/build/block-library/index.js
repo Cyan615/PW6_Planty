@@ -41634,7 +41634,7 @@ function PostTemplateEdit({
       slug: templateSlug.replace('category-', '')
     });
     const query = {
-      offset: perPage ? perPage + offset : 0,
+      offset: offset || 0,
       order,
       orderby: orderBy
     };
