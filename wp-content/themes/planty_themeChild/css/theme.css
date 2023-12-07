@@ -12,6 +12,11 @@ body * {
 main{
     background-color: #ece2da;
 }
+h2{
+    font-size: 3.8rem;
+    color: #d2776a;
+    font-weight: 800;
+}
 /* header & navbar */
 #header, #branding, #menu, #menu-navbar {
     display: flex;
@@ -75,4 +80,33 @@ main{
 /* breakpoint tablet: 1025px */
 @media screen and (max-width:1025px) {
     
+}
+/* page Nous rencontrer */
+/* section 'Nous contacter' */
+.block-contactForm-title{
+    margin-top: 3rem;
+}
+/* habillage formulaire de contacte -> feuilles*/
+.img-contactForm{
+    position: relative;
+    bottom: 18rem;
+    left: -7rem;
+}
+.block-contactForm{
+    z-index: 1;
+}
+/* section l'équipe */
+.block-section-equipe{
+    background-color: #ffffff;
+}
+/* titre de section */
+.block-equipe_title-section{
+   margin-top: 5rem;
+}
+/* section "Nous rencontrer" */
+.block-top_text{
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    max-width: 59%;
+    line-height: 2.4rem;
 }
