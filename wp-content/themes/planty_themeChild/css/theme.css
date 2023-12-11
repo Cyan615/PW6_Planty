@@ -12,10 +12,24 @@ body * {
 main{
     background-color: #ece2da;
 }
-h2{
+h1{
     font-size: 3.8rem;
+    font-weight: 800;
+    color: #3b8e46;
+}
+h2{
+    font-size: 3rem;
     color: #d2776a;
     font-weight: 800;
+}
+h3{
+    font-size: 3rem;
+    color: #3b8e46;
+    font-weight: bold;
+}
+h4{
+    font-size: 2rem;
+    font-weight: bold; 
 }
 /* header & navbar */
 #header, #branding, #menu, #menu-navbar {
@@ -81,20 +95,10 @@ h2{
 @media screen and (max-width:1025px) {
     
 }
-/* page Nous rencontrer */
-/* section 'Nous contacter' */
-.block-contactForm-title{
-    margin-top: 3rem;
-}
-/* habillage formulaire de contacte -> feuilles*/
-.img-contactForm{
-    position: relative;
-    bottom: 18rem;
-    left: -7rem;
-}
-.block-contactForm{
-    z-index: 1;
-}
+/* => Page d'accueil <= */
+
+/* => Page Nous rencontrer <= */
+
 /* section l'équipe */
 .block-section-equipe{
     background-color: #ffffff;
@@ -109,4 +113,53 @@ h2{
     margin-top: 1rem;
     max-width: 59%;
     line-height: 2.4rem;
+}
+/* section 'Nous contacter' */
+/* habillage formulaire de contacte -> feuilles*/
+.img-contactForm{   /* ->position de l'image */
+    position: relative;
+    bottom: 18rem;
+    left: 1rem;
+}
+.block-contactForm{
+    z-index: 1;
+}
+/* mise en page du formulaire de contact */
+.block-contactForm{   /* ->container du formulaire */
+    max-width: 38.3rem;
+}
+.block-contactForm-title{ /*->titre */
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+.contact-label{  /*->label */
+    font-size: 2rem;
+    color: #000000;
+}
+.contact-items{  /*->input */
+    height: 7.1rem;
+    border-radius: 7px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.04);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.contact-message{  /*->textarea*/
+    height: 23.7rem;
+    border-radius: 7px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.04);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.contact-submit{  /*->bouton envoyer*/
+    background-color: #e0b9b4;
+    width: 19.8rem;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.contact-submit:hover{
+    background-color: #c02e44;
 }

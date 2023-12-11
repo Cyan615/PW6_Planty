@@ -18,3 +18,14 @@ function theme_enqueue_styles(){
 function childtheme_supports() {
     register_nav_menu('footer', 'Pied de page');
 }
+// affichage de la page Admin dans le menu
+// function($items, $args){
+//     if(is_user_logged_in() && $args->menu == main-menu){
+//         $adminItemMenu = '<li id="menu-item-111" class="menu-item">admin</li>'<li id="menu-item-112" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-56 current_page_item menu-item-112"><a href="http://planty/?page_id=56" aria-current="page" itemprop="url"><span itemprop="name">Nous rencontrer</span></a></li>;
+//         $items = $adminItemMenu
+//     }
+//     return $items;
+// };
+// add_filter('wp_nav_menu_items', 'add_admin_menu_item', 10, 2);
+
+?>
