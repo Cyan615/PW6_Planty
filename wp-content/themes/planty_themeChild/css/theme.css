@@ -52,7 +52,7 @@ h4{
     align-items: center;
 }
 #header {
-    height: 8rem;
+    min-height: 8rem;
     padding-left: 1vw;
     font-size: 1.9rem;
     background-color: #fff;
@@ -103,6 +103,25 @@ h4{
 .menu-item{
     padding-right: 1.5vw;
 }
+#menu-item-111{
+    order:-1;
+}
+/* responsive */
+/* breakpoint tablet: 1025px */
+@media screen and (max-width:1025px) {
+    #header{
+        flex-direction: column;
+    }
+    #branding {
+        width: 80%;
+        justify-content: flex-start;
+    }
+    #menu {
+        width: 80%;
+        justify-content: flex-end;
+    }
+}
+
 /* footer */
 #footer {
     height:10vh;
@@ -110,14 +129,26 @@ h4{
     align-items: center;
     justify-content: center;
 }
+
+/* => Page d'accueil <= */
 /* responsive */
 /* breakpoint tablet: 1025px */
-@media screen and (max-width:1025px) {
-    
+@media screen and (max-width:1025px){
+
 }
-/* => Page d'accueil <= */
+/* breakpoint mobile: 780px  */
+
+@media screen and (max-width:625px){
+    .block-can-home_top{
+        max-width: 60vw;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+/* ** fin de responsive ** */
 .block-section-home_top{
-    height: 110vh;
+    max-height: 110vh;
 }
 .block-can-home_top{
     max-height: 48rem;
@@ -216,4 +247,46 @@ h4{
 }
 .contact-submit:hover{
     background-color: #c02e44;
+}
+/* Page commander */
+.block-section-order{
+    height: 125vh;
+}
+.section-order_title{
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+.uacf7-row{
+    display: flex;
+}
+.section-order-vertical-line{
+    background-color: #ffffff;
+    width: 1px;
+    height: 80%;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.qt-article{
+    max-width: 5rem;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+.block-taste-line{
+    border-bottom: solid 1px #ffffff;
+    padding-bottom: 5rem;
+}
+.block-info{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+
+.order-submit{
+    margin: auto;
+    display: block;
 }
