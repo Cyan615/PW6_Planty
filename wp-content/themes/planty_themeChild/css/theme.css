@@ -32,18 +32,7 @@ h4{
     font-size: 2rem;
     font-weight: bold; 
 }
-.btn{
-    color:#ffffff;
-    background-color: #e0b9b4;
-    font-size: 1.5rem;
-    line-height: 3.7rem;
-    width: 19.8rem;
-    height: 5.5rem;
-    border-radius: 5px;
-}
-.btn:hover{
-    background-color: #c02e44;
-}
+
 /* header & navbar */
 #header, #branding, #menu, #menu-navbar {
     display: flex;
@@ -67,7 +56,7 @@ h4{
 .custom-logo {
     width: 20vw;
 }
-#site-description {
+#site-description { /*slogan Energy drink */
     font-size: 1.2rem;
     font-weight: bold;
     font-family: 'Baskervville', serif;
@@ -82,9 +71,13 @@ h4{
 .menu-item a:hover{
     font-weight: bold;
 }
+.menu-item{
+    padding-right: 1.5vw;
+}
 /* boutton commander design */
 #menu-item-113{
     padding-right: 0;
+    order:3;
 }
 #menu-item-113 a{
     color: #fff;
@@ -99,12 +92,10 @@ h4{
 #menu-item-113 a:hover {
     background-color: #c02e44;
     font-weight: 400;
-}
-.menu-item{
-    padding-right: 1.5vw;
-}
-#menu-item-111{
-    order:-1;
+}  /*fin */
+
+#menu-item-111{  /* admin item position */
+    order:2;
 }
 /* responsive */
 /* breakpoint tablet: 1025px */
@@ -120,68 +111,73 @@ h4{
         width: 80%;
         justify-content: flex-end;
     }
-}
-
+}  /*fin responsive header*/
+/* fin header */
 /* footer */
 #footer {
     height:10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}  /* Fin footer */
 
 /* => Page d'accueil <= */
 /* responsive */
-/* breakpoint tablet: 1025px */
-@media screen and (max-width:1025px){
+/* breakpoint mobile: 782px  */
 
-}
-/* breakpoint mobile: 780px  */
-
-@media screen and (max-width:625px){
+@media screen and (max-width:782px){
     .block-can-home_top{
         max-width: 60vw;
     }
     h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
+    .block-name-home__advice{
+        justify-content: center;
+        max-height: 20vh;
+    }
+    
 }
 /* ** fin de responsive ** */
-.block-section-home_top{
+.block-section-home_top{  /* section boisson energisante 100%...*/
     max-height: 110vh;
+    margin-bottom: 15px;
 }
-.block-can-home_top{
+.block-can-home_top{  /* cannette avec les branches de chaque côté */
     max-height: 48rem;
 }
-/* .block-section-home_text{
-
-} */
-.block-para-home_text{
+.block-para-home_text{  /*section L'énergie des plantes  */
     font-size: 20px;
     line-height: 24px;
     max-width: 49.7rem;
     height: 12rem;
 }
 /* section les goûts de la page accueil */
-.block-section-home_taste{
+.block-section-home_taste{ /* block */
     margin-bottom: 2rem;
-   margin-top: 5rem;
+    margin-top: 5rem;
 }
-.block-perfum-home_taste{
+.block-perfum-home_taste{ /* 4 img des fruits */
     gap:2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.block-section-home_advice{
+/* section Ce qu'ils en pensent */
+.block-section-home_advice{  /* block */
     min-height: 60vh;
     background-color: #ffffff;
 }
-.block-title-home_advice{
+.block-title-home_advice{ /*titre de la section */
     margin-top: 9rem;
 }
-.block-name-home_advice{
+.block-name-home_advice{  /* block 3 P */
     padding-bottom: 5rem;
     margin-bottom: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.home-advice-name__article{
+    max-width: 50vw;
 }
 /* => Page Nous rencontrer <= */
 
@@ -189,12 +185,10 @@ h4{
 .block-section-equipe{
     background-color: #ffffff;
 }
-/* titre de section */
-.block-equipe_title-section{
+.block-equipe_title-section{  /* titre de section */
    margin-top: 5rem;
 }
-/* section "Nous rencontrer" */
-.block-top_text{
+.block-top_text{  /* section "Nous rencontrer" */
     margin-bottom: 3rem;
     margin-top: 1rem;
     max-width: 59%;
@@ -247,18 +241,18 @@ h4{
 }
 .contact-submit:hover{
     background-color: #c02e44;
-}
+} /*fin bouton envoyer */ 
 /* Page commander */
-.block-section-order{
+.block-section-order{  /* block */
     height: 125vh;
 }
-.section-order_title{
+.section-order_title{ /* titre */
     color: #ffffff;
     font-size: 3rem;
     font-weight: bold;
     padding-bottom: 2rem;
 }
-.uacf7-row{
+.uacf7-row{ /* partie du formulaire avec les informations de livraison  */
     display: flex;
 }
 .section-order-vertical-line{
@@ -273,6 +267,7 @@ h4{
     max-width: 5rem;
     margin: auto;
     margin-top: 0.5rem;
+    appearance: none;
 }
 .block-taste-line{
     border-bottom: solid 1px #ffffff;
@@ -283,10 +278,21 @@ h4{
     margin-bottom: 5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    
 }
-
 .order-submit{
     margin: auto;
     display: block;
+}
+.order-btn-design{
+    color:#ffffff;
+    background-color: #e0b9b4;
+    font-size: 1.5rem;
+    line-height: 3.7rem;
+    width: 19.8rem;
+    height: 5.5rem;
+    border-radius: 5px;
+    border: #e0b9b4;
+}
+.order-btn-design:hover {
+    background-color: #c02e44;
 }
