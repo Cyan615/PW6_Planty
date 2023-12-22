@@ -53,6 +53,7 @@ h4{
 }
 #site-title {
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 .custom-logo {
     width: 20vw;
@@ -68,9 +69,11 @@ h4{
     color: #333333;
     padding: 0 0.5rem;
     outline: none;
+    transition: all 0.3s ease;
 }
 .menu-item a:hover{
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 .menu-item{
     padding-right: 1.5vw;
@@ -88,29 +91,93 @@ h4{
     justify-content: center;
     display: flex;
     align-items: center;
-    
+    transition: all 0.3s ease;
 }
 #menu-item-113 a:hover {
     background-color: #c02e44;
     font-weight: 400;
+    transition: all 0.3s ease;
 }  /*fin */
 
 #menu-item-111{  /* admin item position */
     order:2;
 }
+#burger{
+    display: none;
+}
+#burger-label{
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: 2rem;
+    background-color: #e0b9b4;
+    display: none;
+}
+#burger-label .bar1,
+#burger-label .bar2,
+#burger-label .bar3{
+    display: block;
+    width: 2.2rem;
+    height: 0.4rem;
+    margin: 0.5rem auto;
+    background-color: #c02e44;
+    transition: 0.4s;
+}
+#burger-label:hover{
+    opacity: 0.75;
+    transition: 0.5s;
+}
+#burger:checked~ #burger-label .bar1{
+    transform: rotate(-45deg) translate(-5px,5px);
+    -webkit-transform: rotate(-45deg) translate(-5px,8px);
+}
+#burger:checked~ #burger-label .bar2{
+    opacity: 0;
+}
+#burger:checked~ #burger-label .bar3{
+    transform: rotate(-45deg) translate(-6px,-6px);
+    -webkit-transform:rotate(45deg) translate(-5px, -8px);
+}
+
 /* responsive */
 /* breakpoint tablet: 1025px */
-@media screen and (max-width:1025px) {
+@media screen and (max-width:960px) {
     #header{
+        flex-wrap: wrap;
+    }
+    #branding{
+        justify-content: flex-start;
+        width: 60%;
+    }
+    #menu-navbar {
         flex-direction: column;
     }
-    #branding {
-        width: 80%;
-        justify-content: flex-start;
+   
+    #menu{
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:11rem;
+        background-color: #e3d9d0;
+        z-index: 1;
+        min-height: 27vh;
     }
-    #menu {
-        width: 80%;
-        justify-content: flex-end;
+    .menu-item{
+        height: 4vh;
+        padding-top: 2rem;
+        width: 24rem;
+        text-align: center;
+    }
+    nav{
+        transform: translate(-1120px,0);
+        transition: all 0.5s ease;
+    }
+    #burger-label{
+        display: block;
+    }
+    #burger:checked~nav{
+        transform: translate(0px,0);
+        transition: all 0.5s ease;
     }
 }  /*fin responsive header*/
 /* fin header */
