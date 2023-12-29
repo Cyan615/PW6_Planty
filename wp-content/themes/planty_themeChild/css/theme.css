@@ -57,6 +57,7 @@ h4{
 }
 .custom-logo {
     width: 20vw;
+    height: auto;
 }
 #site-description { /*slogan Energy drink */
     font-size: 1.2rem;
@@ -337,6 +338,7 @@ h4{
     box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.04);
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+    border: none;
 }
 .contact-message{  /*->textarea*/
     height: 23.7rem;
@@ -345,12 +347,15 @@ h4{
     box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.04);
     margin-top: 0.5rem;
     margin-bottom: 2rem;
+    border: none;
 }
 .contact-submit{  /*->bouton envoyer*/
     background-color: #e0b9b4;
     width: 19.8rem;
     height: 5.5rem;
     font-size: 15px;
+    border: none;
+    line-height: 3.7rem;
 }
 .contact-submit:hover{
     background-color: #c02e44;

@@ -29,7 +29,7 @@
 </label>
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 
-<?php wp_nav_menu( array( 
+<?php wp_nav_menu( array(    /*Affichage du menu*/
     'theme_location' => 'main-menu', 
     'link_before' => '<span itemprop="name">', 
     'link_after' => '</span>',

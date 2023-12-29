@@ -22,12 +22,12 @@ add_filter('wp_nav_menu_items', 'add_admin_menu_item', 10, 2);
 function add_admin_menu_item($items, $args){
     if(is_user_logged_in() && $args->theme_location == 'main-menu'){
         $adminItemMenu = '<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
-        <a href="http://planty/wp-admin" aria-current="page" itemprop="url">
+        <a href="'.get_site_url().'/wp-admin/"  aria-current="page" itemprop="url">
         <span itemprop="name">admin</span></a></li>';
         $items .= $adminItemMenu;
     }
     return $items;
 };
-
+// ***'. get_site_url() .' -> permet d'avoir l'adresse du site /wp-admin/ ->pointe sur la page admin***  */
 
 ?>
