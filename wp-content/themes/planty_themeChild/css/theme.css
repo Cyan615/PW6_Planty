@@ -351,6 +351,7 @@ h4{
 }
 .contact-submit{  /*->bouton envoyer*/
     background-color: #e0b9b4;
+    color: #ffffff;
     width: 19.8rem;
     height: 5.5rem;
     font-size: 15px;
